@@ -1,5 +1,9 @@
 # FlickList &#127871;&#127909;	
-An open source Movie recommendation web application.
+A web application that allows users to login and create a personalized list of movies to watch. User can remove the list after watching.
+
+Link to Project: https://flicklist.onrender.com/
+
+![FlickList](https://user-images.githubusercontent.com/94746691/193100570-9a7a4fbd-af34-4532-9a3b-540604535fa6.png)
 
 # Roadmap
 - [ ] Each customer can log in to a unique account.
