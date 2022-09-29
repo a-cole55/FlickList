@@ -22,7 +22,7 @@ nav {
 	background-color: black;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	width: 100%;
-	height: 60px;
+	/* height: 60px; */
 }
 ul {
 	display: flex;
@@ -111,7 +111,7 @@ h3 {
 	font-size: 30px;
 }
 form {
-	max-width: 300px;
+	max-width: 1000px;
 	margin: 10px auto;
 	padding: 10px 20px;
 	background: #f4f7f8;
@@ -202,14 +202,14 @@ label.light {
 	text-decoration: underline;
 }
 #todoHeader {
-	font: 26px 'Montserrat', sans-serif;
+	font: 20px 'Montserrat', sans-serif;
 }
 #todoIMG {
-	width: 70px;
-	height: 75px;
+	width: 40px;
+	height: 45px;
 }
 h4 {
-	font: 40px 'Montserrat', sans-serif;
+	font: 36px 'Montserrat', sans-serif;
 }
 #titles {
 	height: auto;
@@ -228,7 +228,43 @@ h4 {
 	box-shadow: 0 0 20px 0 rgba(239, 239, 240, 0.2),
 		0 5px 5px 0 rgba(239, 239, 240, 0.24);
 }
-
+strong{
+	color:#f7ce5a;
+}
+#nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width:100%;
+	height:60px;
+}
+#logo{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 20px;
+	margin:0;
+}
+#homeButton{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	/* width: 100%; */
+}
+#homeButton a{
+	margin-right: 10px;
+	width:150px;
+	padding: 10px;
+	font-size: 16px;
+}
+/* #actions{
+	display: flex;
+	flex-direction: row;
+	width:1000px;
+} */
 #watchList {
 	height: auto;
 	width: 80%;
@@ -296,11 +332,11 @@ h4 {
 a#logout{
 	color: white;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 16px;
 	border: 0;
 	border-radius: 20px;
 	background-color: maroon;
-	padding: 10px 60px;
+	padding: 10px;
 	text-align: center;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.2)
 }

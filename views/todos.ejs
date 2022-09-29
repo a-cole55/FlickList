@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <br>
-  <div id="homeButton">
-    <a class="home button" href="/">Home</a>
-  </div>
-  
-  <div class="header" id="header">
+<div id="nav">
+  <div class="header" id="logo">
     <h3 id="todoHeader">FlickList</h3>
+    <a href="/">
     <img id="todoIMG" src="./popcorn.png" alt="popcorn movie ticket">
+  </a>
   </div>
+  <div id="homeButton">
+    <a id="logout" href="/logout">Logout</a>
+  </div>
+</div>
+  
 
   <div id = "moviesToWatchHeader">
     <h4>Movies to Watch</h4>
 
-    <h2><%= user.userName %> has <%= left %> movie(s) left to watch.</h2>
+    <h2><%= user.userName %> has <strong><%= left %> movie(s)</strong> left to watch.</h2>
   </div>
-    
 
     <form action="/todos/createTodo" method='POST' id="form">
         <input type="text" placeholder="Enter Movie" name='todoItem'>
@@ -35,7 +37,7 @@
     <% if (message) { %>
       <div id = alert class="alert alert-info"><%= message %></div>
     <% } %>
-<br>
+<!-- <br> -->
 
 
 <form action="" method = '' id="formSort">
@@ -48,8 +50,6 @@
   </select>
   <label for="genres">Filter movies by genre:</label>
   <input type="text" name="genres" id="filterID" placeholder="Enter a Genre">
-  <!-- <br><br> -->
-  <!-- <input type="submit" value="Sort"> -->
 </form>
 
 <!-- <form action="/todos/sortByGenre" method = 'GET'>
@@ -82,19 +82,13 @@
     <div class="popup" id="popup">
       <img id="movieImage" src="" alt="Poster for movie">
       <h2 id="movieTitle"></h2>
-      <span id="movieDetailLabel">Description:</span><p id ="movieDescrip">Movie Description Here</p>
-      <span id="movieDetailLabel">Genre:</span><p id="movieGenre"></p>
+      <span id="movieDetailLabel"></span><p id ="movieDescrip"></p>
+      <span id="movieDetailLabel"></span><p id="movieGenre"></p>
       <!-- <span id="movieDetailLabel">Year:</span><p id="movieYear"></p> -->
       <span id="movieDetailLabel">Rotten Tomato Rating:</span><p id="movieRTRating"></p>
       <button type="button" onclick="closePopup()">Close</button>
     </div>
     <br>
-    <div id="logoutButton">
-      <a id="logout" href="/logout">Logout</a>
-    </div>
-    
-    
-
 
     <script src="js/main.js"></script>
   
